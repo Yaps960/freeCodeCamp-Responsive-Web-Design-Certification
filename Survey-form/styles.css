@@ -1,0 +1,144 @@
+body {
+    background: linear-gradient(
+        #1A2A4F,
+        #2c57bc
+    );
+    margin: 0;
+    padding: 0;
+    font-family: cursive, sans-serif;
+}
+
+#header {
+    max-width: 400px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0;
+}
+
+h1, p {
+    color: #FFDBB6;
+    text-align: center;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 14px;
+}
+
+#survey-form {
+    display: flex;
+    background-color: #FFF2EF;
+    max-width: 500px;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+    border: 5px solid #F7A5A5;
+    opacity: 90%;
+    border-radius: 2%;
+    align-items: center;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+input[type="text"], input[type="email"], input[type="number"],
+select,
+textarea {
+    margin-bottom: 15px;
+    padding: 8px;
+    width: 100%;
+    max-width: 250px;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 50px;
+    resize: none;
+}
+
+#name-label, #email-label, #number-label {
+    width: 100%;
+    max-width: 250px;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+fieldset {
+    width: 100%;
+    max-width: 250px;
+    border: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+legend {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+#submit {
+    background-color: #F7A5A5;
+    border: 0;
+    width: 100%;
+    max-width: 250px;
+    height: 40px;
+    border-radius: 2%;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #f08888;
+}
+
+@media (max-width: 480px) {
+    #survey-form {
+        padding: 15px;
+        border-width: 3px;
+    }
+
+    input[type="text"], input[type="email"], input[type="number"],
+    select,
+    textarea {
+        max-width: 100%;
+    }
+
+    #name-label, #email-label, #number-label {
+        max-width: 100%;
+    }
+
+    fieldset {
+        max-width: 100%;
+    }
+
+    #submit {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    #header {
+        margin: 40px auto;
+    }
+}
